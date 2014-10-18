@@ -1,17 +1,24 @@
-This README.md file is displayed on your project page. You should edit this 
-file to describe your project, including instructions for building and 
-running the project, pointers to the license under which you are making the 
-project available, and anything else you think would be useful for others to
-know.
+Whats up, Watson? Using IBM Watson with Bluemix and NodeExpress
+This project uses a IBM Watson's Question and Answer service with Bluemix. The app has been developed using NodeExpress with Enide Studio. The Watson's QAAPI has the medical corpus and is based on ingested medical facts. Users can ask Watson questions like
+What is Parkinson's disease? or
+Am I at risk of a heart attack
 
-We have created an empty license.txt file for you. Well, actually, it says,
-"<Replace this text with the license you've chosen for your project.>" We 
-recommend you edit this and include text for license terms under which you're
-making your code available. A good resource for open source licenses is the 
-[Open Source Initiative](http://opensource.org/).
 
-Be sure to update your project's profile with a short description and 
-eye-catching graphic.
+Files
 
-Finally, consider defining a timeline and work items on the "Current Work" tab 
-to give interested developers a sense of your cadence and upcoming enhancements.
+app.js
+This file sets up the routes and views for the application. It also starts the Webserver
+
+routes/
+The routes format the questions in the required QAAPI format of Watson.
+
+views/
+This directory contains the views of the application. The views format the response from Watson
+
+public/
+This directory contains the stylesheet
+
+manifest.yml
+
+package.json
+This file is required by the Node.js environment. It specifies this Node.js project name, dependencies, and other configurations of your Node.js application.
